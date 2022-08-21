@@ -1,0 +1,1 @@
+This project (or rather example) is part of Chapter 9's 'CMS with OOP' and is from the book *PHP Advanced and Object-Oriented Programming* by Larry Ullman. 
