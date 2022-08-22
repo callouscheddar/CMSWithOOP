@@ -13,6 +13,8 @@ Requisite Functionality:
 - Only administrative users, or the author of the currently viewed page  of content, will be provided access to edit the page.
 - Only administrative users or author users can create new pages. 
 
+## Database Tables
+
 Users Table |-
 -|-
 **Column** | **Type**
@@ -33,7 +35,7 @@ content | TEXT
 dateUpdated | TIMESTAMP
 dateAdded  | TIMESTAMP
 
-Utilities File
+## Utilities File
 This file needs to fufill three needs:
 - It defines a autloading function for classes
 - It starts the session and checks for the presence of a User object previously stored in the session
