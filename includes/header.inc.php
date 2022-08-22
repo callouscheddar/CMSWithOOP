@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= $pagetitle ?? 'Website' ?></title>
+    <title><?= $pageTitle ?? 'Website' ?></title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -14,11 +14,11 @@
         <h1>Website</h1>
         <nav>
             <ul>
-                <li>Stuff</li>
+                <li><a href="index.php">Home</a></li>
                 <?php if ($user) : ?>
                     <li><a href="logout.php">Logout</a></li>
                 <?php else : ?>
-                    <li><a href="logout.php">Login</a></li>
+                    <li><a href="login.php">Login</a></li>
                 <?php endif ?>
                 <li>Other Stuff</li>
                 <?php if ($user &&  $user->canCreatePage()) : ?>

@@ -1,4 +1,7 @@
 <?php
+// composer
+require 'vendor/autoload.php';
+
 // class autoloader
 function class_loader($class)
 {

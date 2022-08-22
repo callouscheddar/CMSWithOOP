@@ -1,5 +1,5 @@
 CREATE TABLE users (
-id INT UNISGNED NOT NULL AUTO_INCREMENT,
+id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 userType ENUM('public', 'author', 'admin'),
 username VARCHAR(30) NOT NULL,
 email VARCHAR(40) NOT NULL,
@@ -10,6 +10,7 @@ UNIQUE (username),
 UNIQUE (email),
 INDEX login (username, pass)
 );
+
 
 CREATE TABLE pages (
 id INT UNSIGNED NOT NULL AUTO_INCREMENT,

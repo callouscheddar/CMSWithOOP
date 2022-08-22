@@ -23,6 +23,7 @@ userType | ENUM
 username | VARCHAR(30)
 email | VARCHAR(40)
 pass | CHAR(40)
+dateAdded | TIMESTAMP
 
 
 Pages Table |-
