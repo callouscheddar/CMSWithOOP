@@ -32,3 +32,9 @@ title | VARCHAR(100)
 content | TEXT
 dateUpdated | TIMESTAMP
 dateAdded  | TIMESTAMP
+
+Utilities File
+This file needs to fufill three needs:
+- It defines a autloading function for classes
+- It starts the session and checks for the presence of a User object previously stored in the session
+- Opens the database conn, creating a PDO object in the process
