@@ -1,0 +1,9 @@
+<?php
+while ($page = $result->fetch()) {
+    echo "<article>
+        <h1>{$page->getTitle()}</h1>
+        <p>{$page->getIntro(50)}</p>
+        <a href=\"page.php?id={$page->getId()}\">read more here...</a>
+    </article>";
+}
+?>
