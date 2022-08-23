@@ -9,7 +9,7 @@ $email->addFilter('trim');
 $email->addRule('required', 'Please enter your email.');
 $email->addRule('email', 'Please enter your email.');
 
-$password = $form->addElement('text', 'password');
+$password = $form->addElement('password', 'password');
 $password->setLabel('Password');
 $password->addFilter('trim');
 $password->addRule('required', 'Enter a password.');

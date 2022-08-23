@@ -7,7 +7,7 @@ try {
         throw new Exception("Page does not exist, invalid page Id.");
     }
 
-    $query = 'SELECT id, title, content, DATE_FORMAT(dateAdded, "%e %M %Y") AS dateAdded FROM pages WHERE id=:id';
+    $query = 'SELECT id, creatorId, title, content, DATE_FORMAT(dateAdded, "%e %M %Y") AS dateAdded FROM pages WHERE id=:id';
     $statement = $pdo->prepare($query);
     $result = $statement->execute([':id' => $_GET['id']]);
 

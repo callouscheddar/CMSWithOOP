@@ -11,7 +11,6 @@ UNIQUE (email),
 INDEX login (username, pass)
 );
 
-
 CREATE TABLE pages (
 id INT UNSIGNED NOT NULL AUTO_INCREMENT,
 creatorId INT UNSIGNED NOT NULL,

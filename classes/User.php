@@ -20,7 +20,7 @@ class User
 
     function canEditPage(Page $page)
     {
-        return ($this->isAdmin() || ($this->id == $page->getCreatorId));
+        return ($this->isAdmin() || ($this->id == $page->getCreatorId()));
     }
 
     function canCreatePage() 

@@ -1,5 +1,5 @@
 <h1><?= $page->getTitle() ?></h1>
-<?php if ($user && $user->canEditPage()): ?>
+<?php if ($user && $user->canEditPage($page)): ?>
 <a href="edit_page.php?id=<?= $page->getId() ?>">Edit</a>
 <?php endif ?>
 <p>Added: <?= $page->getDateAdded() ?>, Updated: <?= $page->getDateUpdated() ?? "Never Updated" ?></p>
